@@ -1,0 +1,268 @@
+/* =========================================================
+   Web Teknolojileri Proje Ödevi - Stil Dosyası
+   Bootstrap 5 üzerine özel tasarım katmanı
+   ========================================================= */
+
+/* ---------- Renk değişkenleri ---------- */
+:root {
+    --renk-ana: #2c3e50;
+    --renk-vurgu: #e67e22;
+    --renk-acik: #ecf0f1;
+    --renk-koyu: #1a252f;
+    --renk-metin: #2c3e50;
+    --renk-metin-acik: #7f8c8d;
+    --golge-yumusak: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --golge-orta: 0 8px 24px rgba(0, 0, 0, 0.12);
+    --gecis: all 0.3s ease;
+}
+
+/* ---------- Genel ---------- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--renk-metin);
+    line-height: 1.7;
+    background-color: #fdfdfd;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--renk-ana);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+a {
+    color: var(--renk-vurgu);
+    text-decoration: none;
+    transition: var(--gecis);
+}
+
+a:hover {
+    color: var(--renk-koyu);
+}
+
+/* ---------- Navbar ---------- */
+.site-navbar {
+    background-color: var(--renk-ana) !important;
+    padding: 0.9rem 0;
+    box-shadow: var(--golge-yumusak);
+}
+
+.site-navbar .navbar-brand {
+    color: #fff !important;
+    font-weight: 700;
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+}
+
+.site-navbar .navbar-brand span {
+    color: var(--renk-vurgu);
+}
+
+.site-navbar .nav-link {
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    transition: var(--gecis);
+    position: relative;
+}
+
+.site-navbar .nav-link:hover,
+.site-navbar .nav-link.aktif {
+    color: var(--renk-vurgu) !important;
+}
+
+.site-navbar .nav-link.aktif::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+    right: 1rem;
+    height: 2px;
+    background-color: var(--renk-vurgu);
+}
+
+.site-navbar .btn-login {
+    background-color: var(--renk-vurgu);
+    color: #fff !important;
+    border-radius: 4px;
+    padding: 0.4rem 1.2rem !important;
+}
+
+.site-navbar .btn-login:hover {
+    background-color: #d35400;
+    color: #fff !important;
+}
+
+/* ---------- Hero / Başlık alanı ---------- */
+.hero {
+    background: linear-gradient(135deg, var(--renk-ana) 0%, var(--renk-koyu) 100%);
+    color: #fff;
+    padding: 5rem 0 4rem;
+    margin-bottom: 3rem;
+}
+
+.hero h1 {
+    color: #fff;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero h1 span {
+    color: var(--renk-vurgu);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    opacity: 0.85;
+    max-width: 600px;
+}
+
+/* ---------- Kartlar ---------- */
+.kart {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.8rem;
+    box-shadow: var(--golge-yumusak);
+    transition: var(--gecis);
+    height: 100%;
+    border: 1px solid #ecf0f1;
+}
+
+.kart:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--golge-orta);
+}
+
+.kart h3 {
+    color: var(--renk-ana);
+    margin-bottom: 0.8rem;
+    font-size: 1.25rem;
+}
+
+/* ---------- Bölüm başlığı ---------- */
+.bolum-baslik {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.bolum-baslik h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 0.8rem;
+}
+
+.bolum-baslik h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--renk-vurgu);
+}
+
+.bolum-baslik p {
+    color: var(--renk-metin-acik);
+    margin-top: 1rem;
+}
+
+/* ---------- Bölümler ---------- */
+section {
+    padding: 3rem 0;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+    background-color: var(--renk-koyu);
+    color: rgba(255, 255, 255, 0.75);
+    padding: 2.5rem 0 1.5rem;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.site-footer a {
+    color: var(--renk-vurgu);
+}
+
+.site-footer .ayraç {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 1.5rem 0;
+}
+
+/* ---------- Butonlar ---------- */
+.btn-vurgu {
+    background-color: var(--renk-vurgu);
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.8rem;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: var(--gecis);
+}
+
+.btn-vurgu:hover {
+    background-color: #d35400;
+    color: #fff;
+    transform: translateY(-1px);
+}
+
+.btn-anahat {
+    background: transparent;
+    color: var(--renk-ana);
+    border: 2px solid var(--renk-ana);
+    padding: 0.6rem 1.7rem;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: var(--gecis);
+}
+
+.btn-anahat:hover {
+    background-color: var(--renk-ana);
+    color: #fff;
+}
+
+/* ---------- Profil resmi ---------- */
+.profil-resim {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--renk-vurgu);
+    box-shadow: var(--golge-orta);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+    .hero {
+        padding: 3rem 0 2rem;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .profil-resim {
+        width: 160px;
+        height: 160px;
+        margin: 0 auto 1.5rem;
+        display: block;
+    }
+
+    section {
+        padding: 2rem 0;
+    }
+}

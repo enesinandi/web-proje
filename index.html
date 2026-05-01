@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web Teknolojileri proje ödevi - Kişisel tanıtım sitesi">
+    <title>Hakkında | Web Teknolojileri Projesi</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Özel stil dosyası -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!--   NAVBAR  -->
+    <nav class="navbar navbar-expand-lg site-navbar sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                Enes Yusuf<span>İnandı</span>
+            </a>
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Menü">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Hakkında</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cv.html">Özgeçmiş</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sehrim.html">Şehrim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mirasimiz.html">Mirasımız</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ilgi-alanlarim.html">İlgi Alanlarım</a></li>
+                    <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                        <a class="nav-link btn-login" href="login.html">
+                            <i class="bi bi-person-circle"></i> Giriş
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--   HERO   -->
+    <header class="hero">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-md-8">
+                    <h1>Merhaba, ben <span>Enes Yusuf İnandı</span></h1>
+                    <p>
+                        Merhaba, ben <strong>Enes Yusuf İnandı</strong>. Sakarya Üniversitesi Bilgisayar Mühendisliği 1. sınıf öğrencisiyim.
+                        Akademik eğitimim kapsamında <strong>C++ ve C#</strong> dilleri üzerinde temel yetkinlikler kazanırken,
+                        eş zamanlı olarak modern finans dünyasına olan ilgim doğrultusunda kendimi <strong>Java Full Stack Developer</strong>
+                        yolunda geliştiriyorum.
+                        Gelecekteki temel hedefim; <strong>bankacılık sektörü ve Fintech (finansal teknolojiler)</strong> alanında,
+                        özellikle Java tabanlı yüksek performanslı backend sistemleri üzerine uzmanlaşarak bu sektöre değer katan projeler üretmektir.
+                    </p>
+                    <a href="cv.html" class="btn btn-vurgu me-2">Özgeçmişim</a>
+                    <a href="iletisim.html" class="btn btn-anahat" style="border-color:#fff;color:#fff;">İletişime Geç</a>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="https://placehold.co/220x220/e67e22/ffffff?text=Foto"
+                         alt="Profil fotoğrafı"
+                         class="profil-resim">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--   ANA İÇERİK  -->
+    <main>
+
+        <!-- Hakkımda -->
+        <section id="hakkimda">
+            <div class="container">
+                <div class="bolum-baslik">
+                    <h2>Hakkımda</h2>
+                    <p>Ben Enes Yusuf İnandı. 2005 Yılında Adıyaman'da doğdum. Şuanda Sakarya Üniversitesi Bilgisayar Mühendisliği Bölümünde öğrencilik hayatıma devam etmekteyim.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <p>
+                            Merhabalar ben Enes Yusuf İnandı. Sakarya Üniversitesi Bilgisayar Mühendisliği 1. sınıf öğrencisiyim.
+                            Film-dizi izlemekten , müzik dinlemekten ,yeni yerler görmekten ve birazda kodlamadan hoşlanırım.
+                        </p>
+                        <p>
+                            İleride kariyer hayatıma bankacılık sektörü ve Fintech (finansal teknolojiler) alanında,
+                            özellikle Java tabanlı yüksek performanslı backend sistemleri üzerine çalışmalar yapmak istiyorum.
+                            Bunun için şuanda Hastane Otomasyon projesi vs. gibi küçük projeler geliştiriyorum.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                                    title="Tanıtım videosu"
+                                    allowfullscreen></iframe>
+                        </div>
+                        <small class="text-muted d-block mt-2">
+                            Beni anlatan / sevdiğim bir video (kendi videon yoksa sevdiğin bir şey koyabilirsin)
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hobiler -->
+        <section id="hobilerim" style="background-color: var(--renk-acik);">
+            <div class="container">
+                <div class="bolum-baslik">
+                    <h2>Hobilerim &amp; İlgi Alanlarım</h2>
+                    <p>Boş zamanlarımda yaptıklarım</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <article class="kart">
+                            <i class="bi bi-code-slash" style="font-size:2rem;color:var(--renk-vurgu)"></i>
+                            <h3>Yazılım</h3>
+                            <p>Yeni teknolojiler öğrenmek, küçük projeler geliştirmek ve açık kaynağa katkı sağlamak.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="kart">
+                            <i class="bi bi-book" style="font-size:2rem;color:var(--renk-vurgu)"></i>
+                            <h3>Kitap</h3>
+                            <p>Bilim kurgu ve teknoloji üzerine kitaplar okumak.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="kart">
+                            <i class="bi bi-trophy" style="font-size:2rem;color:var(--renk-vurgu)"></i>
+                            <h3>Futbol</h3>
+                            <p>Hafta sonları halı sahada futbol oynamak en sevdiğim aktivitelerden.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Etkinlikler -->
+        <section id="etkinlikler">
+            <div class="container">
+                <div class="bolum-baslik">
+                    <h2>Katıldığım Etkinlikler</h2>
+                    <p>Move ile dApp geliştirme</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-8 offset-md-2">
+                        <article class="kart">
+                            <h3>Move ile dApp</h3>
+                            <p class="text-muted small">Tarih:26.11.2025 | Yer: Sakarya Üniversitesi</p>
+                            <p>Bir nebzede olsa Move dilini öğrendim. Kendi Sui cüzdanımı oluşturdum ve kendi NFT'mi tasarlayıp satışa koydum.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bağlantılar -->
+        <section id="baglantilar" style="background-color: var(--renk-acik);">
+            <div class="container text-center">
+                <div class="bolum-baslik">
+                    <h2>Bana Ulaş</h2>
+                    <p>Sosyal medya ve diğer platformlarda</p>
+                </div>
+                <div class="d-flex justify-content-center flex-wrap gap-3">
+                    <a href="https://github.com/enesinandi" target="_blank" rel="noopener" class="btn btn-anahat">
+                        <i class="bi bi-github"></i> GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/enes-inand%C4%B1-27b596381/" target="_blank" rel="noopener" class="btn btn-anahat">
+                        <i class="bi bi-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="mailto:enes.inandi@ogr.sakarya.edu.tr" class="btn btn-anahat">
+                        <i class="bi bi-envelope"></i> E-Posta
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!--  FOOTER  -->
+    <footer class="site-footer">
+        <div class="container">
+            <p class="mb-1">© 2026 Enes Yusuf İnandı — Tüm hakları saklıdır.</p>
+            <small>
+                Web Teknolojileri Proje Ödevi |
+                <a href="https://github.com/enesinandi/web-proje" target="_blank" rel="noopener">GitHub</a>
+            </small>
+            <div class="ayraç"></div>
+            <small>Sakarya Üniversitesi · 2025-2026 Bahar Dönemi</small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Özel JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
