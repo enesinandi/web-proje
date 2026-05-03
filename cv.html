@@ -3,60 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Özgeçmiş | Web Teknolojileri Projesi</title>
+    <meta name="description" content="Enes Yusuf İnandı - Özgeçmiş">
+    <title>Özgeçmiş | Enes Yusuf İnandı</title>
+
+    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg site-navbar sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Enes Yusuf<span>İnandı</span></a>
-            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navMenu">
-                <ul class="navbar-nav ms-auto align-items-lg-center">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Hakkında</a></li>
-                    <li class="nav-item"><a class="nav-link" href="cv.html">Özgeçmiş</a></li>
-                    <li class="nav-item"><a class="nav-link" href="sehrim.html">Şehrim</a></li>
-                    <li class="nav-item"><a class="nav-link" href="mirasimiz.html">Mirasımız</a></li>
-                    <li class="nav-item"><a class="nav-link" href="ilgi-alanlarim.html">İlgi Alanlarım</a></li>
-                    <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
-                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
-                        <a class="nav-link btn-login" href="login.html"><i class="bi bi-person-circle"></i> Giriş</a>
-                    </li>
-                </ul>
-            </div>
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg site-navbar sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Enes Yusuf<span>İnandı</span></a>
+        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item"><a class="nav-link" href="index.html">Hakkında</a></li>
+                <li class="nav-item"><a class="nav-link" href="cv.html">Özgeçmiş</a></li>
+                <li class="nav-item"><a class="nav-link" href="sehrim.html">Şehrim</a></li>
+                <li class="nav-item"><a class="nav-link" href="mirasimiz.html">Mirasımız</a></li>
+                <li class="nav-item"><a class="nav-link" href="ilgi-alanlarim.html">İlgi Alanlarım</a></li>
+                <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+                <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                    <a class="nav-link btn-login" href="login.html"><i class="bi bi-person-circle"></i> Giriş</a>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
-    <main>
-        <section>
-            <div class="container">
-                <div class="bolum-baslik">
-                    <h2>Özgeçmiş</h2>
-                    <p>İçerik yakında eklenecek</p>
-                </div>
+<!-- Sayfa başlığı -->
+<header class="hero">
+    <div class="container">
+        <h1>Özgeçmiş</h1>
+        <p>Enes Yusuf İnandı &mdash; Bilgisayar Mühendisliği Öğrencisi</p>
+    </div>
+</header>
+
+<!-- Main içerik -->
+<main>
+    <div class="container py-5">
+        <div class="row g-4">
+
+            <!-- Sol kolon(Ana CV) -->
+            <div class="col-lg-8">
+
+                <!--  EĞİTİM  -->
+                <section id="egitim" class="mb-5">
+                    <header class="bolum-baslik text-start">
+                        <h2><i class="bi bi-mortarboard-fill me-2"></i>Eğitim</h2>
+                    </header>
+
+                    <article class="kart mb-3">
+                        <h3>Sakarya Üniversitesi</h3>
+                        <p class="text-muted mb-2">
+                            Bilgisayar Mühendisliği &middot;
+                            <time datetime="2025">2025</time> &ndash;
+                            <time datetime="2029">2029 (devam ediyor)</time>
+                        </p>
+                        <p>
+                            1. sınıf öğrencisi olarak eğitimime devam etmekteyim.
+                        </p>
+                    </article>
+                </section>
+
+                <!--  BECERİLER  -->
+                <section id="beceriler" class="mb-5">
+                    <header class="bolum-baslik text-start">
+                        <h2><i class="bi bi-code-slash me-2"></i>Beceriler</h2>
+                    </header>
+
+                    <article class="kart">
+                        <h3>Programlama Dilleri</h3>
+                        <ul>
+                            <li><strong>C++</strong> &mdash; üniversite müfredatı kapsamında öğreniyorum</li>
+                            <li><strong>C#</strong> &mdash; nesne yönelimli programlama temelleri</li>
+                            <li><strong>Java</strong> &mdash; Full Stack yolunda kendi kendime geliştiriyorum</li>
+                            <li><strong>HTML / CSS / JavaScript</strong> &mdash; web teknolojileri</li>
+                            <li><strong>PHP</strong> &mdash; sunucu tarafı temelleri</li>
+                        </ul>
+                    </article>
+
+                    <article class="kart mt-3">
+                        <h3>Araç ve Teknolojiler</h3>
+                        <ul>
+                            <li>Bootstrap 5</li>
+                            <li>Git &amp; GitHub</li>
+                            <li>WebStorm / VS Code / IntelliJ IDEA / VS / CLion</li>
+                        </ul>
+                    </article>
+                </section>
+
+                <!--  PROJELER  -->
+                <section id="projeler" class="mb-5">
+                    <header class="bolum-baslik text-start">
+                        <h2><i class="bi bi-folder-fill me-2"></i>Projeler</h2>
+                    </header>
+
+                    <article class="kart mb-3">
+                        <h3>Hastane Otomasyon Sistemi</h3>
+                        <p class="text-muted small">Java &middot; Kişisel Proje</p>
+                        <p>
+                            C# Dili ile geliştirdiğim içinde hasta , doktor , ve sekreter için ayrı ayrı formları olan
+                            SQL veritabanlı bir hastane otomasyon sistemi. Bu sistem ile hasta , doktor veya sekreter
+                            kendilerine ait olan kullanıcı adı şifre ile kendi profillerine girerek randevu alma ,
+                            duyuru yapma , şikayet belirtme gibi ve daha nice kapsamlı özelliklleri bulunan bir hastane
+                            otomasyon sistemidir.
+                        </p>
+                    </article>
+
+                    <article class="kart">
+                        <h3>Kişisel Web Sitesi</h3>
+                        <p class="text-muted small">HTML, CSS, JavaScript, PHP &middot; 2026</p>
+                        <p>
+                            Web Teknolojileri dersi kapsamında geliştirdiğim, semantic HTML5,
+                            responsive tasarım ve PHP backend içeren kişisel tanıtım sitesi.
+                            (İçinde bulundnuğunuz site)
+                        </p>
+                    </article>
+                </section>
 
             </div>
-        </section>
-    </main>
 
-    <footer class="site-footer">
-        <div class="container">
-            <p class="mb-1">© 2026 Enes Yusuf İnandı — Tüm hakları saklıdır.</p>
-            <small>
-                Web Teknolojileri Proje Ödevi |
-                <a href="https://github.com/enesinandi/web-proje" target="_blank" rel="noopener">GitHub</a>
-            </small>
-            <div class="ayraç"></div>
-            <small>Sakarya Üniversitesi · 2025-2026 Bahar Dönemi</small>
+            <!-- Sağ kolon (yan bilgiler) -->
+            <aside class="col-lg-4">
+
+                <section class="kart mb-4">
+                    <h3><i class="bi bi-person-fill me-2"></i>Kişisel</h3>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt-fill text-muted me-2"></i>
+                            Sakarya, Türkiye
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-calendar-fill text-muted me-2"></i>
+                            <time datetime="2005">2005</time> doğumlu
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-envelope-fill text-muted me-2"></i>
+                            <a href="mailto:enes.inandi@ogr.sakarya.edu.tr">enes.inandi@ogr.sakarya.edu.tr</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="kart mb-4">
+                    <h3><i class="bi bi-translate me-2"></i>Diller</h3>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2">
+                            <strong>Türkçe</strong> &mdash; Anadil
+                        </li>
+                        <li class="mb-2">
+                            <strong>İngilizce</strong> &mdash; Temel düzey (okuma/yazma)
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="kart">
+                    <h3><i class="bi bi-link-45deg me-2"></i>Bağlantılar</h3>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2">
+                            <i class="bi bi-github me-2"></i>
+                            <a href="https://github.com/enesinandi" target="_blank" rel="noopener">github.com/enesinandi</a>
+                        </li>
+                        <li>
+                            <i class="bi bi-linkedin me-2"></i>
+                            <a href="https://www.linkedin.com/in/enes-inand%C4%B1-27b596381/" target="_blank" rel="noopener">LinkedIn</a>
+                        </li>
+                    </ul>
+                </section>
+
+            </aside>
+
         </div>
-    </footer>
+    </div>
+</main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script>
+<!-- Site geneli footer -->
+<footer class="site-footer">
+    <div class="container">
+        <p class="mb-1">© 2026 Enes Yusuf İnandı — Tüm hakları saklıdır.</p>
+        <small>
+            Web Teknolojileri Proje Ödevi |
+            <a href="https://github.com/enesinandi/web-proje" target="_blank" rel="noopener">GitHub</a>
+        </small>
+        <div class="ayraç"></div>
+        <small>Sakarya Üniversitesi · 2025-2026 Bahar Dönemi</small>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
