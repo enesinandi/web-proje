@@ -265,4 +265,38 @@ section {
     section {
         padding: 2rem 0;
     }
+
+    /* ---------- Slider ---------- */
+    .slider-resim {
+        height: 400px;
+        object-fit: cover;
+        cursor: pointer;
+        transition: transform 0.5s ease;
+    }
+
+    .slider-resim:hover {
+        transform: scale(1.02);
+    }
+
+    .carousel-caption {
+        background: rgba(0, 0, 0, 0.55);
+        border-radius: 8px;
+        padding: 1rem 1.5rem;
+        bottom: 2rem;
+    }
+
+    .carousel-caption h3 {
+        color: #fff;
+        margin-bottom: 0.3rem;
+    }
+
+    .carousel-caption p {
+        margin-bottom: 0;
+    }
+
+    @media (max-width: 768px) {
+        .slider-resim {
+            height: 300px;
+        }
+    }
 }
