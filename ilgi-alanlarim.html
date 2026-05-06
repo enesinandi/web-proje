@@ -3,60 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="İlgi Alanlarım - Popüler diziler ve filmler (TVMaze API)">
     <title>İlgi Alanlarım | Web Teknolojileri Projesi</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg site-navbar sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Enes Yusuf<span>İnandı</span></a>
-            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navMenu">
-                <ul class="navbar-nav ms-auto align-items-lg-center">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Hakkında</a></li>
-                    <li class="nav-item"><a class="nav-link" href="cv.html">Özgeçmiş</a></li>
-                    <li class="nav-item"><a class="nav-link" href="sehrim.html">Şehrim</a></li>
-                    <li class="nav-item"><a class="nav-link" href="mirasimiz.html">Mirasımız</a></li>
-                    <li class="nav-item"><a class="nav-link" href="ilgi-alanlarim.html">İlgi Alanlarım</a></li>
-                    <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
-                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
-                        <a class="nav-link btn-login" href="login.html"><i class="bi bi-person-circle"></i> Giriş</a>
-                    </li>
-                </ul>
-            </div>
+<nav class="navbar navbar-expand-lg site-navbar sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Enes Yusuf<span>İnandı</span></a>
+        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item"><a class="nav-link" href="index.html">Hakkında</a></li>
+                <li class="nav-item"><a class="nav-link" href="cv.html">Özgeçmiş</a></li>
+                <li class="nav-item"><a class="nav-link" href="sehrim.html">Şehrim</a></li>
+                <li class="nav-item"><a class="nav-link" href="mirasimiz.html">Mirasımız</a></li>
+                <li class="nav-item"><a class="nav-link" href="ilgi-alanlarim.html">İlgi Alanlarım</a></li>
+                <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+                <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                    <a class="nav-link btn-login" href="login.html"><i class="bi bi-person-circle"></i> Giriş</a>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
-    <main>
-        <section>
-            <div class="container">
-                <div class="bolum-baslik">
-                    <h2>İlgi Alanlarım</h2>
-                    <p>İçerik yakında eklenecek</p>
+<header class="hero">
+    <div class="container">
+        <h1>İlgi Alanlarım: <span>Diziler</span></h1>
+        <p>Hakkımda sayfasında bahsettiğim gibi <strong>film ve dizi izlemeyi</strong> seviyorum. Bu sayfadaki tüm veriler <strong>TVMaze API</strong>'den anlık olarak çekilmektedir.</p>
+    </div>
+</header>
+
+<main>
+
+    <!-- ========== ARAMA KUTUSU ========== -->
+    <section class="py-5">
+        <div class="container">
+            <div class="bolum-baslik">
+                <h2>Dizi / Film Ara</h2>
+                <p>Bir dizi veya film adı yazarak arama yapabilirsiniz</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="input-group input-group-lg">
+                        <input type="text"
+                               id="ara-input"
+                               class="form-control"
+                               placeholder="örn: Breaking Bad, Sherlock, House..."
+                               aria-label="Dizi veya film ara">
+                        <button id="ara-btn" class="btn btn-vurgu" type="button">
+                            <i class="bi bi-search"></i> Ara
+                        </button>
+                    </div>
                 </div>
-
             </div>
-        </section>
-    </main>
 
-    <footer class="site-footer">
-        <div class="container">
-            <p class="mb-1">© 2026 Enes Yusuf İnandı — Tüm hakları saklıdır.</p>
-            <small>
-                Web Teknolojileri Proje Ödevi |
-                <a href="https://github.com/enesinandi/web-proje" target="_blank" rel="noopener">GitHub</a>
-            </small>
-            <div class="ayraç"></div>
-            <small>Sakarya Üniversitesi · 2025-2026 Bahar Dönemi</small>
+            <div id="arama-sonuclari" class="row g-4 mt-4">
+                <!-- Arama sonuçları buraya gelecek -->
+            </div>
         </div>
-    </footer>
+    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script>
+    <!-- ========== POPÜLER DİZİLER ========== -->
+    <section class="py-5" style="background-color: var(--renk-acik);">
+        <div class="container">
+            <div class="bolum-baslik">
+                <h2>Popüler Diziler</h2>
+                <p>En yüksek IMDB puanına sahip 12 dizi</p>
+            </div>
+
+            <div id="populer-diziler" class="row g-4">
+                <div class="col-12 text-center py-5">
+                    <div class="spinner-border" role="status" style="color: var(--renk-vurgu);">
+                        <span class="visually-hidden">Yükleniyor...</span>
+                    </div>
+                    <p class="mt-3 text-muted">Diziler yükleniyor...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== API BİLGİSİ ========== -->
+    <section class="py-5">
+        <div class="container">
+            <div class="bolum-baslik">
+                <h2>API Hakkında</h2>
+                <p>Bu sayfada kullanılan veri kaynağı</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <article class="kart">
+                        <h3><i class="bi bi-database me-2"></i>TVMaze API</h3>
+                        <p>
+                            Bu sayfadaki tüm veriler, açık kaynaklı bir TV/dizi veritabanı olan
+                            <strong>TVMaze</strong>'in sunduğu ücretsiz REST API üzerinden
+                            JavaScript'in <code>fetch()</code> fonksiyonu ile çekilmektedir.
+                            Sayfa her açıldığında veriler güncel olarak yenilenir.
+                        </p>
+                        <p class="mb-0">
+                            <strong>Endpoint örneği:</strong><br>
+                            <code class="small">https://api.tvmaze.com/search/shows?q=breaking+bad</code>
+                        </p>
+                        <div class="mt-3">
+                            <a href="https://www.tvmaze.com/api" target="_blank" rel="noopener" class="btn btn-anahat">
+                                <i class="bi bi-box-arrow-up-right"></i> TVMaze API'yi Ziyaret Et
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <p class="mb-1">© 2026 Enes Yusuf İnandı — Tüm hakları saklıdır.</p>
+        <small>
+            Web Teknolojileri Proje Ödevi |
+            <a href="https://github.com/enesinandi/web-proje" target="_blank" rel="noopener">GitHub</a>
+        </small>
+        <div class="ayraç"></div>
+        <small>Sakarya Üniversitesi · 2025-2026 Bahar Dönemi</small>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+<!-- TVMaze API entegrasyonu -->
+<script src="js/tvmaze-api.js"></script>
 </body>
 </html>
