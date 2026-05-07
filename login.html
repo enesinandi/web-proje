@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Giriş sayfası">
     <title>Giriş | Web Teknolojileri Projesi</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
@@ -32,14 +34,85 @@
         </div>
     </nav>
 
-    <main>
-        <section>
-            <div class="container">
-                <div class="bolum-baslik">
-                    <h2>Giriş</h2>
-                    <p>İçerik yakında eklenecek</p>
-                </div>
+    <header class="hero">
+        <div class="container">
+            <h1>Giriş Yap</h1>
+            <p>Sisteme erişmek için öğrenci e-posta adresiniz ve şifrenizle giriş yapın.</p>
+        </div>
+    </header>
 
+    <main>
+        <section class="py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-5">
+
+                        <article class="kart">
+                            <h2 class="text-center mb-4">
+                                <i class="bi bi-shield-lock-fill" style="color: var(--renk-vurgu);"></i>
+                                <br>
+                                Hesabıma Giriş
+                            </h2>
+
+                            <!--  HATA MESAJI (URL'den geliyorsa)  -->
+
+                            <div id="hata-kutusu" class="alert alert-danger d-none" role="alert">
+                                <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                                <span id="hata-metni"></span>
+                            </div>
+
+                            <!--  LOGIN FORMU  -->
+                            <form id="login-form"
+                                  action="php/login-check.php"
+                                  method="POST"
+                                  novalidate>
+
+                                <!-- Kullanıcı adı e-posta ile -->
+                                <div class="mb-3">
+                                    <label for="kullanici" class="form-label">
+                                        <i class="bi bi-envelope-fill me-1"></i>E-posta
+                                    </label>
+                                    <input type="email"
+                                           class="form-control"
+                                           id="kullanici"
+                                           name="kullanici"
+                                           placeholder="ornek@sakarya.edu.tr"
+                                           autocomplete="username">
+                                    <small class="text-danger" id="hata-kullanici"></small>
+                                </div>
+
+                                <!-- Şifre -->
+                                <div class="mb-4">
+                                    <label for="sifre" class="form-label">
+                                        <i class="bi bi-key-fill me-1"></i>Şifre
+                                    </label>
+                                    <input type="password"
+                                           class="form-control"
+                                           id="sifre"
+                                           name="sifre"
+                                           placeholder="Öğrenci numaranız"
+                                           autocomplete="current-password">
+                                    <small class="text-danger" id="hata-sifre"></small>
+                                </div>
+
+                                <!-- Giriş butonu -->
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-vurgu btn-lg">
+                                        <i class="bi bi-box-arrow-in-right me-1"></i>
+                                        Giriş Yap
+                                    </button>
+                                </div>
+
+                                <!-- Bilgilendirme -->
+                                <p class="text-muted small text-center mt-4 mb-0">
+                                    <i class="bi bi-info-circle me-1"></i>
+                                    Sakarya Üniversitesi öğrenci e-postası ve numarası ile giriş yapılır.
+                                </p>
+                            </form>
+                        </article>
+
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -58,5 +131,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <!-- Login sayfasına özel doğrulama -->
+    <script src="js/login.js"></script>
 </body>
 </html>
