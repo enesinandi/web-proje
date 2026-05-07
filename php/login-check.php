@@ -16,8 +16,8 @@ if ($_SERVER["REQUEST_METHOD"] !== "POST") {
 
     */
 $DOGRU_EPOSTA = "enes.inandi@ogr.sakarya.edu.tr";
-$DOGRU_SIFRE  = "B251210086";  // <-- KENDİ ÖĞRENCİ NUMARANI YAZ
-$OGRENCI_NO   = "B251210086";  // welcome.php'ye iletilecek (numara)
+$DOGRU_SIFRE  = "B251210086";
+$OGRENCI_NO   = "B251210086";
 
 
 // Formdan gelen veriler
