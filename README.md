@@ -6,7 +6,7 @@
 **Üniversite:** Sakarya Üniversitesi
 
 ## 🌐 Canlı Site
-[Buraya hosting linkin gelecek — örn: https://kullaniciadi.infinityfreeapp.com]
+**https://enesweb.xo.je**
 
 ## 📂 Sayfalar
 | Sayfa | Dosya | Açıklama |
