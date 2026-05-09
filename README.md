@@ -1,51 +1,39 @@
 # Web Teknolojileri Proje Ödevi
 
-**Ders:** Web Teknolojileri — 2025/2026 Bahar Dönemi
-**Öğrenci:** [Ad Soyad]
-**Numara:** [b24XXXXXXXX]
-**Üniversite:** Sakarya Üniversitesi
+Sakarya Üniversitesi Web Teknolojileri dersi için yaptığım kişisel tanıtım sitesi.
 
-## 🌐 Canlı Site
-**https://enesweb.xo.je**
+**Canlı Site:** https://enesweb.xo.je
 
-## 📂 Sayfalar
-| Sayfa | Dosya | Açıklama |
-|---|---|---|
-| Hakkında | `index.html` | Kişisel tanıtım, hobiler, medya |
-| Özgeçmiş (CV) | `cv.html` | Semantic HTML5 ile eğitim/deneyim |
-| Şehrim | `sehrim.html` | Şehir tanıtımı + 4'lü slider |
-| Mirasımız | `mirasimiz.html` | Kültürel miras / spor takımı |
-| İlgi Alanlarım | `ilgi-alanlarim.html` | API entegrasyonu |
-| İletişim | `iletisim.html` | Form + JS ve framework doğrulaması |
-| Login | `login.html` | Öğrenci no ile giriş (PHP) |
+## Öğrenci Bilgileri
 
-## 🛠 Kullanılan Teknolojiler
-- **HTML5** (Semantic tags)
-- **CSS3** + **Bootstrap 5** (responsive)
-- **JavaScript** (Native + Vue.js validation)
-- **PHP** (Form ve login işlemleri)
-- **API:** [Buraya seçtiğin API gelecek — TMDB / Jikan / vb.]
+- Ad Soyad: Enes Yusuf İnandı
+- Numara: B251210086
+- Bölüm: Bilgisayar Mühendisliği
 
-## 📁 Klasör Yapısı
-```
-proje/
-├── index.html              # Hakkında (anasayfa)
-├── cv.html, sehrim.html, ...   # Diğer sayfalar
-├── css/style.css           # Harici stil dosyası
-├── js/main.js              # Frontend JS
-├── img/                    # Resimler
-└── php/                    # Sunucu tarafı işlemleri
-    ├── process.php         # İletişim form alıcı
-    ├── login-check.php     # Login doğrulama
-    └── welcome.php         # Başarılı giriş sayfası
-```
+## Sayfalar
 
-## 🚀 Çalıştırma
-PHP sayfaları için yerel sunucu gerekir:
-```bash
-php -S localhost:8000
-```
-Ardından tarayıcıda `http://localhost:8000` adresini aç.
+- `index.html` — Hakkında
+- `cv.html` — Özgeçmiş
+- `sehrim.html` — Şehrim (Bursa)
+- `mirasimiz.html` — Bursa Ulu Camii
+- `ilgi-alanlarim.html` — TVMaze API ile dizi listesi
+- `iletisim.html` — İletişim formu
+- `login.html` — Giriş sayfası
 
-## 📅 Geliştirme Süreci
-Bu repo'nun commit geçmişi, projenin sıfırdan teslime kadar günlük ilerlemesini gösterir.
+## Kullandıklarım
+
+- HTML5, CSS3
+- Bootstrap 5
+- JavaScript
+- Vue.js (iletişim formunda)
+- PHP (form ve login için)
+- TVMaze API
+
+## Çalıştırma
+
+PHP gerektiği için XAMPP veya benzeri bir sunucu lazım. Proje klasörünü `htdocs` içine atıp `http://localhost/proje/` adresinden açılabilir.
+
+## Login Bilgileri
+
+- E-posta: enes.inandi@ogr.sakarya.edu.tr
+- Şifre: Öğrenci numarası
